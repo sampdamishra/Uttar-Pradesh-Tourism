@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e2f2fbb0;
+    overflow-x: hidden;
+}
+header{
+    margin-bottom: 3px;
+}
+.heading {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif ;
+    color: #FEF3E2;
+    background-color: #210F37;
+    
+}
+.bg-img{
+    overflow-x: hidden;
+}
+h3{
+    text-align: center;
+    height: 3rem;
+    line-height: 3rem;
+    color: #FEF3E2;
+    background-color: #FA812F;
+}
+#navbar{
+    height: 1.5rem;
+    line-height: 1.5rem;
+    background-color:#f8d6dd;
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+    border: border-box;
+    padding: 3px;
+}
+a{
+    text-decoration: none;
+    color: #210F37;
+}
+li{
+    list-style-type: none;
+    display: inline;
+}
+#Destinations:hover{
+    position: relative;
+    height:fit-content;
+    width: fit-content;
+    background-color: #f59454;
+    border: 2px ;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.dropdown-hidden{
+    display: none;
+}
+.dropdown-visible{
+    display: block;
+    color: whitesmoke; 
+    border-radius: 5px;
+    white-space: nowrap;
+}
+.Destination-list{
+    display: block;
+    color: #FEF3E2;
+}
+#Media:hover{
+    position: relative;
+    height:fit-content;
+    width: fit-content;
+    background-color: #f59454;
+    border: 2px ;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.dropdown-hiddenMedia{
+    display: none;
+}
+.dropdown-visibleMedia{
+    display: block;
+    color: whitesmoke; 
+    border-radius: 5px;
+    white-space: nowrap;
+}
+.media-list{
+    display: block;
+    color: #FEF3E2;
+}
+.para{
+    font-size: larger;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+.bg-img_new3{
+    overflow-x: hidden;
+    position: absolute;
+}
+.up{
+    margin-top: 20px;
+    display: flex;
+}
+.up_img img{
+    height: 500px;
+    width: 550px;
+    opacity: .9;
+    box-shadow: 0 0 6px rgb(32, 28, 28);
+}
+.up_img img:hover{
+    opacity: 1;
+}
+.Festivals{
+    height: fit-content;
+    width: 100%;
+    background-color: #e4f4fb;
+    .list-of-months{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            gap:20px;
+            margin-left: 80px;
+            padding-bottom: 50px;
+        }
+        li{
+            background-color: #47afc43a;
+            height: 100px;
+            width: 30%;
+            margin-bottom: 15px;
+            padding: 5px;
+            border: 4px solid maroon;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 15px;
+            box-shadow: 0 0 6px rgb(32, 28, 28);
+            font-size: x-large;
+            font-family: monospace;
+            font-weight: bolder;
+            display: flex;
+            img{
+                margin-left: 150px;
+                opacity: .8;
+                height: 100px;
+                width:fit-content;
+            }
+            .text1{
+                height: 6rem;
+                line-height: 6rem;
+                color: #0f1111;
+            }
+            .text-overlay{
+                position: absolute;
+                display: none;
+            }
+        }
+        li:hover{
+            background-color: #3a90a1d2;
+            .text1{
+                color: #fff;
+            }
+            img{
+              opacity: 1;
+              box-shadow: 0 0 6px rgb(32, 28, 28);
+              transition: .4s ease-out;
+           }
+        }
+    }
+}
+.slideshow{
+    background-color: #3a8fa1;
+}
+.title{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: monospace;
+}
+.bg-img_new{
+    position: relative;
+    top: -90px;
+}
+.slideshow-container{
+    margin-top: 0px;
+    max-width: 700px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+.mySlides-fade{
+    display: none;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade{
+    from{opacity: .4;}
+    to{opacity: 1;}
+}
+.mySlides-fade img{
+    height: 400px;
+    width: 700px;  
+}
+.prev,.next{
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.text{
+    color: #f2f2f2;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.numbertext{
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 0 2px;
+    background-color: rgba(99, 28, 28, 0.507);
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover{
+    background-color: #fff;
+}
+.bg-img_new1{
+    margin-top: 40px;
+    position: relative;
+    bottom: -10px;
+}
+footer{
+    background-color: #222f3d;
+}
+footer p{
+    margin-left: 1%;
+    margin-right: 1%;
+    color: yellow;
+}
+.foot-panel1{
+    background-color: #37475a;
+    color: white;
+    margin: 2px;
+    padding: 2px;
+    p{
+        font-size: larger;
+        margin: 2px;
+        padding: 2px;
+    }
+}
+.foot-panel2{
+    background-color: #222f3d;
+    color: #fff;
+    list-style: none;
+    margin-left: 4px;
+    font-style: none;
+    p{
+        font-size: larger;
+    }
+}
+.foot-panel2 ul a{
+    display: block;
+    margin-top: 10px;
+    color:#dddddd;
+    text-decoration: none;
+}
+.foot-panel3{
+    background-color: #0f1111;
+    color: rgb(243, 243, 50);
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 0.5px solid grey;
+    p{
+        font-size: larger;
+    }
+}
+.foot-panel3 a{
+    border: 0.3px solid yellow;
+    color: yellow;
+    border-radius: 15px;
+    padding: 6px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
