@@ -25,7 +25,7 @@ mongoose.connect(mongoURI)
 
 app.get('/', (req, res) => {res.send("your server is running!");
 });
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.post('/api/feedback', async (req,res) => {
     try{
@@ -43,5 +43,5 @@ app.post('/api/feedback', async (req,res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Server started on http://127.0.0.1:${PORT}`);
+    console.log(`Server started on ${PORT}`);
 });
