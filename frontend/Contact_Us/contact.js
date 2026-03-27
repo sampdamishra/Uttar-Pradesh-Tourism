@@ -24,16 +24,3 @@ document.addEventListener("DOMContentLoaded",function(){
         dropdownMedia.style.display = "none";
     });
 });
-// document.addEventListener("DOMContentLoaded",function(){
-//     const Contact = document.getElementById("Contact");
-//     console.log(Contact);
-//     const dropdownContact =document.getElementById("dropdownContact");
-//     console.log(dropdownContact);
-
-//     Media.addEventListener("mouseenter", function() {
-//         dropdownContact.style.display = "block";
-//     });
-//     Media.addEventListener("mouseleave", function() {
-//         dropdownContact.style.display = "none";
-//     });
-// })
